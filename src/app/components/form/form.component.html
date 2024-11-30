@@ -1,0 +1,14 @@
+<div class="block w-full px-80 py-16 my-5 text-white bg-indigo-700 border border-indigo-800 rounded-lg shadow">
+  <h2 class="text-2xl font-bold mb-4">Formulario de Contacto</h2>
+  <form (ngSubmit)="onSubmit()" #contactForm="ngForm">
+    <div class="mb-4 w-full">
+      <label for="email" class="block ">Correo electrónico</label>
+      <input type="email" id="email" name="email" ngModel required class="w-full text-black px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500">
+    </div>
+    <div class="mb-4 w-full">
+      <label for="message" class="block">Motivo de interés</label>
+      <textarea id="message" name="message" ngModel required class="w-full text-black h-60 border rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+    </div>
+    <button type="submit" class="w-full bg-indigo-800 py-2 px-4 rounded-lg hover:bg-indigo-900 focus:outline-none focus:ring-2 focus:ring-indigo-500">Submit</button>
+  </form>
+</div>
